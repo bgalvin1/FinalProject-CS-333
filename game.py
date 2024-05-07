@@ -46,7 +46,7 @@ def main():
         outcome = g.computeWinner(playermove, computerMove)
         if outcome == 0:
             print("computer move your move: " + computerMove + "Your move: " + playermove)
-            print("you won round 1\n")
+            print("you won round the round\n")
             print(f"Your score: {g.p.getScore()} Computer Score: {g.c.getScore()}")
         else:
             print("computer move your move: " + computerMove + "Your move: " + playermove)

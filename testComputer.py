@@ -9,7 +9,15 @@ class TestComputer(unittest.TestCase):
     
     def test_computerMove(self):
         c = Computer()
-        self.assertEqual(c.computerMove(), 'rock' or 'paper' or 'scissors')
+        m = c.computerMove()
+        if m == 'rock':
+            self.assertEqual(m, 'rock')
+        elif m == 'paper':
+            self.assertEqual(m, 'paper')
+        elif m == 'scissors':
+            self.assertEqual(m, 'scissors')
+        else:
+            self.assertEqual(0, 1)
 
 if __name__ == '__main__':
     unittest.main()

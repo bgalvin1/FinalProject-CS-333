@@ -31,6 +31,7 @@ class Game:
             return -1
         
     #0 for player win 1 for CPU win
+    #comment for demonstration
     def computeBestOf3(self):
         if (self.p.score == 2):
             return 0
